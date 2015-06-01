@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @number = 10
+    @beer = Beer.all
   end
 end

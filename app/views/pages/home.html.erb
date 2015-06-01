@@ -2,6 +2,14 @@
 <p>Beers in the database:</p>
 
 
-<% image_tag('smokingfishchicken.jpg') %>
+<p><% image_tag('smokingfishchicken.jpg') %></p>
+
+<p><% @beer.each do |b|  %></p>
+  <li><%= b.name %></li>
+  <li><%= b.type %></li>
+  <li><%= b.year %></li>
+  <li><%= b.info %></li>
+  <% end %>
+
 
 
