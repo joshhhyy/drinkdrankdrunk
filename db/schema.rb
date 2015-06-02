@@ -18,11 +18,12 @@ ActiveRecord::Schema.define(version: 20150531034850) do
 
   create_table "beers", force: :cascade do |t|
     t.text     "name"
-    t.text     "type"
+    t.text     "style"
     t.text     "info"
     t.integer  "rating"
     t.integer  "year"
     t.float    "abv"
+    t.text     "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 20150531034850) do
 
   create_table "users", force: :cascade do |t|
     t.text     "name"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

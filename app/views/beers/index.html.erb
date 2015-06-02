@@ -1,0 +1,6 @@
+<p><% @beers.each do |beer|  %></p>
+  <li><%= link_to beer.name, beer %></li>
+  <li><%= beer.style %></li>
+  <li><%= beer.year %></li>
+  <li><%= beer.info %></li>
+<% end %>

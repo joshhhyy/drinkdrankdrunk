@@ -2,14 +2,23 @@
 <html>
 <head>
   <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <title>Beerslist</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <h1><%= link_to 'Drink Drank Drunk', root_path %></h1>
+  <nav>
+    <ul>
+      <li><%= link_to 'Beers', beers_path %></li>
+      <%== intellinav %>
+    </ul>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>

@@ -4,11 +4,12 @@
 #
 #  id         :integer          not null, primary key
 #  name       :text
-#  type       :text
+#  style      :text
 #  info       :text
 #  rating     :integer
 #  year       :integer
 #  abv        :float
+#  image      :text
 #  created_at :datetime
 #  updated_at :datetime
 #
