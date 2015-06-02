@@ -1,6 +1,11 @@
 <div class="left">
   <%=  image_tag @beer.image %>
   <p>Add to My List</p>
+  <li>Introduced: <%= @beer.year %></li>
+  <li>Type: <%= @beer.style %></li>
+  <li>Rating: <%= @beer.rating %> </li>
+  <li>Alcohol by Volume: <%= @beer.abv %>% </li>
+
 </div>
 
 <div class="right">

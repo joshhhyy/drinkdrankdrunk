@@ -5,7 +5,8 @@ html {
   background-color: white;
   margin: 0 auto;
   max-width: 960px;
-  font-family: 'Arial';
+  font-family: 'Helvetica';
+
 }
 
 .container {
@@ -37,8 +38,11 @@ h1 {
   font-family: 'Dosis', sans-serif;
 }
 
+p {
+  font-size: 12px;
+}
+
 p, h2 {
-  padding: 15px;
   line-height: 25px;
 }
 
@@ -46,8 +50,15 @@ img {
 }
 
 nav {
-  width: 200px;
-  display: inline-block;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  padding: 30px;
 }
 
 div.left {
@@ -58,6 +69,10 @@ div.left {
 div.left p {
   text-align: center;
   background-color: red;
+}
+
+div.left li {
+  font-size: 12px;
 }
 
 div.left img {
