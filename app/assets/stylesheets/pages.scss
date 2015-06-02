@@ -40,6 +40,8 @@ h1 {
 
 p {
   font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 p, h2 {
@@ -51,15 +53,26 @@ img {
 
 nav {
   text-align: center;
+  padding: 4px 0 4px 0;
+  background-color: black;
 }
 
 nav li {
   display: inline;
+  padding: 20px;
 }
 
-nav a {
-  padding: 30px;
+nav li:hover {
+  background-color: #AFAFAF;
 }
+
+
+nav a {
+  margin: 20px; 
+  color: white;
+}
+
+
 
 div.left {
   float: left;
