@@ -1,0 +1,28 @@
+<h3><%= @user.name %>'s Consumed Drinks</h3>
+
+<table class="table">
+  <tr>
+    <th>#</th>
+    <th>Drink</th>
+    <th>Rating</th>
+    <th>Drank</th>
+  </tr>
+
+
+  <% @current_user.list.drinks.order('created_at ASC').each do |drink| %>
+  <% beerId = drink.beer_id %>
+  <% @beer = Beer.find beerId %>
+  <tr>
+    <td><%= @number %></td>
+    <td><%= link_to @beer.name, @beer %></td>
+    <td>
+    <%= form_for drink, :url => "/drink/#{@current_user.list.id}/#{ drink.id }", :method => "POST" do |f| %>
+      <%= f.text_field :rating %>
+    <% end %>
+    </td>
+    <td><%= drink.quantity %></td>  
+  </tr>
+  <% @number += 1 %>
+  <% end %>
+</table>
+

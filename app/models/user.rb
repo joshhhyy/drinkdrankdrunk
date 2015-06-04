@@ -10,6 +10,6 @@
 #
 
 class User < ActiveRecord::Base
-  has_many :lists
+  has_one :list
   has_secure_password
 end

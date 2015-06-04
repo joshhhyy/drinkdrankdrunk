@@ -9,7 +9,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1><%= link_to 'Drink Drank Drunk', root_path %></h1>
+  <div class="header">
+    <h1><%= link_to 'Drink Drank Drunk', root_path %></h1>
+
+    <form action="/search">
+      <input type="text" name="beername" placeholder="Enter Beer Name...">
+      <button>Search</button> 
+    </form> 
+    
+  </div>
   <nav>
     <ul>
       <li><%= link_to 'Top Beers', beers_path %></li>

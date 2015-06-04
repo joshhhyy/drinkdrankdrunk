@@ -1,0 +1,7 @@
+<h3>Search Results</h3>
+
+<% @beers.each do |b| %>
+  <% if b.name == @beer_search %>
+    <li><%= link_to b.name, b %></li>
+  <% end %>
+<% end %>

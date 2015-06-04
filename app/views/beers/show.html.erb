@@ -1,6 +1,9 @@
+<h3><%= @beer.name %></h3>
+
 <div class="left">
   <%=  image_tag @beer.image %>
-  <p>Add to My List</p>
+  <p><%= link_to "Add to List", add_path, :method => "POST" %></p>
+
   <li>Introduced: <%= @beer.year %></li>
   <li>Type: <%= @beer.style %></li>
   <li>Rating: <%= @beer.rating %> </li>
@@ -11,6 +14,20 @@
 <div class="right">
   <h2><%= @beer.name %></h2>
   <p> <%= @beer.info %></p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'drinkdrankdrunk';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
 
 <div class="clear"></div>

@@ -6,12 +6,10 @@ html {
   margin: 0 auto;
   max-width: 960px;
   font-family: 'Helvetica';
-
 }
 
-.container {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+.none {
+  display: none;
 }
 
 a {
@@ -30,26 +28,33 @@ ol {
 
 label {
   min-width: 170px;
-  text-align: right;
+  text-align: center;
   display: inline-block;
 }
+
 
 h1 {
   font-family: 'Dosis', sans-serif;
 }
 
-p {
-  font-size: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+h2 {
+  text-align: center;
 }
 
-p, h2 {
+h3 {
+  padding: 10px 0 10px 20px;
+  background-color: rgba(218, 223, 225, 1);
+  margin: 0;
+  border-bottom: 1px solid gray;  
+}
+
+p {
+  font-size: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 25px;
 }
 
-img {
-}
 
 nav {
   text-align: center;
@@ -63,9 +68,12 @@ nav li {
 }
 
 nav li:hover {
-  background-color: #AFAFAF;
+  background-color: rgba(218, 223, 225, 1);
 }
 
+nav li:hover a {
+  color: black;
+}
 
 nav a {
   margin: 20px; 
@@ -74,31 +82,132 @@ nav a {
 
 
 
-div.left {
+.left {
   float: left;
   width: 25%;
 }
 
-div.left p {
+.left p {
   text-align: center;
-  background-color: red;
 }
 
-div.left li {
+.left li {
   font-size: 12px;
 }
 
-div.left img {
-  max-width: 100%;
-  width: 100px;
-  height: 300px;
+.left img {
+  padding-top: 10px;
+  width: 180px;
+  height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-div.right {
+.right {
   float: right;
   width: 75%;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.table {
+  font-size:12px;
+  color:#333333;
+  width:100%;
+  border-width: 1px;
+  border-color: #729ea5;
+  border-collapse: collapse;
+
+}
+.table th {
+  font-size:12px;
+  background-color:#acc8cc;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+  text-align:left;
+
+}
+
+.table tr {
+  background-color:#d4e3e5;
+}
+
+.table td {
+  font-size:12px;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+  
+}
+
+.table tr:hover {
+  background-color:#ffffff;
+}
+
+.header {
+  display: inline-block;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  height: 450px;
+  box-shadow: 0 15px 30px 
+}
+
+
+
+
+
+
+
+
+form.edit_drink input {
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+form.edit_drink input:focus {
+  outline: none;
+  background: white;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
