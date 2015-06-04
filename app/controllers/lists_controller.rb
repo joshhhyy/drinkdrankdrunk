@@ -23,7 +23,7 @@ class ListsController < ApplicationController
     quantity = 1 || params[:quantity]
 
     if !@current_user.list.drinks.where( :beer_id => beer.id ) || @current_user.list.drinks.where( :beer_id => beer.id ).empty?
-      @current_user.list.drinks << Drink.create( :quantity => quantity, :rating => 0, :beer_id => beer.id )
+      @current_user.list.drinks << Drink.create( :quantity => quantity, :rating => 1, :beer_id => beer.id )
     else
       drink = @current_user.list.drinks.where( :beer_id => beer.id )[0]
       drink.quantity += 1

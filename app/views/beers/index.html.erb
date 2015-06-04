@@ -2,6 +2,17 @@
 
 
 
-<% @beers.each do |beer|  %>
-    <li><%= link_to beer.name, beer %> (Rating: <%= beer.rating %>)</li>
+<% @beers.each do |b|  %>
+  <% @users.each do |u| %>
+    <% u.list.drinks.each do |d| %>
+      <% if d.beer_id == b.id %> 
+        <% @score += d.rating %>
+        <% @divide += 1 %>
+      <% end %>
+    <% end %>
+  <% end %>
+  <% b.rating = @score / @divide unless @score == 0 %>
+  <% @score = 0 %>
+  <% @divide = 1 %>
+    <li> <%= link_to b.name, b %> (Rating: <%= b.rating %>) </li>
 <% end %>

@@ -17,7 +17,7 @@
     <td><%= link_to @beer.name, @beer %></td>
     <td>
     <%= form_for drink, :url => "/drink/#{@current_user.list.id}/#{ drink.id }", :method => "POST" do |f| %>
-      <%= f.text_field :rating %>
+      <%= f.number_field :rating, :in => 0..10%>
     <% end %>
     </td>
     <td><%= drink.quantity %></td>  
