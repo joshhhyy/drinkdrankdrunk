@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
-  background-color: white;
+  background-color: #E8D4A7;
   margin: 0 auto;
   max-width: 960px;
   font-family: 'Helvetica';
@@ -14,7 +14,7 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #664E3B;
 }
 
 li {
@@ -34,7 +34,8 @@ label {
 
 
 h1 {
-  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
@@ -43,9 +44,10 @@ h2 {
 
 h3 {
   padding: 10px 0 10px 20px;
-  background-color: rgba(218, 223, 225, 1);
+  background-color: #AB8364;
   margin: 0;
-  border-bottom: 1px solid gray;  
+  border-bottom: 1px solid gray;
+  font-family: 'Josefin Sans', sans-serif;  
 }
 
 p {
@@ -53,13 +55,14 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   line-height: 25px;
+  color: #664E3B
 }
 
 
 nav {
   text-align: center;
   padding: 4px 0 4px 0;
-  background-color: black;
+  background-color: #36291F;
 }
 
 nav li {
@@ -68,7 +71,7 @@ nav li {
 }
 
 nav li:hover {
-  background-color: rgba(218, 223, 225, 1);
+  background-color: #AB8364;
 }
 
 nav li:hover a {
@@ -76,6 +79,7 @@ nav li:hover a {
 }
 
 nav a {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 20px; 
   color: white;
 }
@@ -121,23 +125,23 @@ table, th, td {
   color:#333333;
   width:100%;
   border-width: 1px;
-  border-color: #729ea5;
+  border-color: #AB8364;
   border-collapse: collapse;
 
 }
 .table th {
   font-size:12px;
-  background-color:#acc8cc;
+  background-color: #AB8364;
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #729ea5;
+  border-color: #AB8364;
   text-align:left;
 
 }
 
 .table tr {
-  background-color:#d4e3e5;
+  background-color: #D1B986;
 }
 
 .table td {
@@ -145,7 +149,7 @@ table, th, td {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #729ea5;
+  border-color: #AB8364;
   
 }
 

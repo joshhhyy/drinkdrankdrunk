@@ -1,9 +1,7 @@
 <h3>Top Beers</h3>
 
 
-<div class="right">
-  <% @beers.each do |beer|  %>
-    <li><%= link_to beer.name, beer %></li>
-    <li>Rating: <%= beer.rating %></li>
-  <% end %>
-</div>
+
+<% @beers.each do |beer|  %>
+    <li><%= link_to beer.name, beer %> (Rating: <%= beer.rating %>)</li>
+<% end %>

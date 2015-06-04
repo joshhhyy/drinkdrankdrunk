@@ -10,9 +10,9 @@ List.destroy_all
 Drink.destroy_all
 Beer.destroy_all
 
-u1 = User.create :name => "Alexandra Agoston", :password => "chicken", :password_confirmation => "chicken"
-u2 = User.create :name => "Jane Birkin", :password => "chicken", :password_confirmation => "chicken"
-u3 = User.create :name => "Marion Cotillard", :password => "chicken", :password_confirmation => "chicken"
+u1 = User.create :name => "joshhhyy", :password => "chicken", :password_confirmation => "chicken"
+u2 = User.create :name => "randical", :password => "chicken", :password_confirmation => "chicken"
+u3 = User.create :name => "bonglord", :password => "chicken", :password_confirmation => "chicken"
 
 l1 = List.create
 l2 = List.create
