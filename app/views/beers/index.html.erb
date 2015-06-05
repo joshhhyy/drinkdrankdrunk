@@ -14,5 +14,5 @@
   <% b.rating = @score / @divide unless @score == 0 %>
   <% @score = 0 %>
   <% @divide = 1 %>
-    <li> <%= link_to b.name, b %> (Rating: <%= b.rating %>) </li>
+    <li> <%= link_to b.name, b %> (Rating: <%= b.rating %>)</li>
 <% end %>
