@@ -1,28 +1,9 @@
-== README
+# Project 1: Drink Drank Drunk
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Overview
 
-Things you may want to cover:
+'Drink Drank Drunk' is my project which aims to determine which beer is the most favoured by the users of the website. DDD is my website, developed via Rails, that has users sign up and rate beer that they have consumed; the site will then provide an average and rank the beers accordingly from highest to lowest to determine which beer is truly the best.
 
-* Ruby version
+### End Report
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+While I found difficulty due to the scale of the project (Multiple models, confusing relationships etc.) *most* things that I aimed to implement were achieved. Confusion still remains in certain spots of Rails development and databases but practice makes perfect I guess.
